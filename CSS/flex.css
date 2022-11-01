@@ -1,0 +1,90 @@
+/* FLEXBOX */ 
+
+/* Primer paso activar flexbox en la caja, padre aplica a hijo*/
+
+/*  display: flex;
+    flex-direction: ;  direccion (vertical u horizontal) row/row-reverse  column/column-reverse
+    flex-wrap: ;        caja multilinea o mantenga una sola linea cuando se achica  no-wrap/wrap/
+    flex-flow: ;        version abreviada de direction y wrap   primero direction segundo wrap
+    justify-content: ;  alinear horizontalmente si el padre es fila y alinear verticalmente si el padre es columna
+    align-items: ;      alinear verticalmente si el padre es columna            strech
+    align-content: ;    alinear verticalmente a los hijos cuando son multilinea.  (con wrap)
+
+    flex direction me modifica como se alinea con justify-content(igual a flex direc) y aling-items(inverso a flex direc)
+*/
+
+/* Flex en los hijos*/
+
+.hijoFlex {
+
+    order: -3;
+    border: solid;
+}
+h1{
+    text-align: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header{
+    color: azure;
+    background-color: black;
+}
+.menuFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    
+}
+.mainFlex{
+    display: flex;
+}
+.asideFlex {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+ul {
+    list-style-type: none;
+    background-color: #000;
+    height: 30vh;
+    padding: 10px;
+    
+    
+}
+
+ul li {
+   
+    background-color: #fff;
+    color:#000    ;
+    margin: 5px 0 5px 5px;
+    /* width:120px ;
+    height: 50px; */
+    padding: 10px;
+    text-align: center;
+}
+img{
+    margin: 5px;
+   
+}
+aside{
+    background-color: pink;
+}
+li:hover {
+    background-color:orange ;
+    
+}
+.sectionFlex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+}
