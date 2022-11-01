@@ -1,0 +1,32 @@
+/* Resetear el codigo para sacarle margenes predeterminados*/
+* {
+    margin: 0;
+}
+
+
+/* Estilos Generales*/
+
+
+
+
+
+
+/*Box Model*/
+
+
+p {
+    width:300px; /* ANCHO*/
+    height: 100vh; /* ALTO */ /* Si quiero usar % en alto, tengo que predeterminar la altura con max-height*/
+    background-color: aqua;
+    margin: 100px 200px 100px 200px; /*Margen Arriba derecha abajo izquierda*/
+    padding: 10px 20px 10px 20px; /* Espacio hacia adentro*/
+    border: solid; /* bordes*/
+    border-style: bold; /* estilo de borde, googlear mas tipos*/
+}
+/* Block vs INLINE*/ 
+/* Block se ponen una arriba del otra, inline una al lado de otra*/
+/* inline-block toma lo mejor de cada uno, mientras puede usa linea y cuando no entra mas usa bloque*/
+
+body{
+    display: inline-block;
+}

@@ -1,0 +1,58 @@
+/* 
+Estructura CSS
+
+selector {
+    propiedad: valor;
+}
+*/
+
+/* Tipografia*/ 
+
+/*Voy a google fonts descargo el que me gusta y lo pego dentro de la carpeta css, descomprimimos
+y tenemos la tipografia*/
+/*INSERTO LA TIPOGRAFIA*/
+@font-face {
+    font-family: Roboto-Black;
+    src: url(./FONTS/Roboto-Black.ttf);
+}
+
+/*Tambien se pueden usar fuentes online, ingresando codigo en el head del html y luego usando el css*/
+
+
+body {
+    background-color: aqua;
+    font-family: "Roboto-Black";
+}
+
+/* Estilos de listas*/
+/* Ver todos los tipos de biñetas que se pueden usar */
+
+ul{
+    list-style-type: none;
+}
+.negrita {
+  font-weight: bold;
+}
+
+/* ALINEAR*/
+
+/* text-aling: center right left justify*/
+
+/* INTERLINEADO */
+
+/* line-height; 1.5px*/
+
+/* SUBRAYADO/TACHADO*/
+
+/* text-decoration: none, line-through, underline, overline*/
+
+/*  FONDO */ 
+
+/* background-color:
+   background-img:
+   background-image: url()
+   background:
+   background-repeat:
+   background-position: center center;
+   background-size: 100% 100%;   cover ocupa todo el espacio disponible/ contain estira la imagen hasta el tamaño maximo
+*/

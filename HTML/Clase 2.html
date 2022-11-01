@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <header> <h1 id="arriba">Primeros pasos con HTML</h1></header>
+    <main> 
+        <h2>Armando jerarquia</h2>
+        <p>
+            Asi se arma la estructura HTML
+        </p>
+    </main>
+    <section>
+        <!-- Imagen local-->
+        <img src="../IMG/paletas.webp" alt="Foto" width="200" height="200"> 
+            <!--Imagen en la nube-->
+        <img src="https://e00-marca.uecdn.es/blogs/espanasemueve/imagenes_posts/2022/06/03/205885.jpg" alt="">
+
+         
+         <!-- LLama a otra pagina dentro del mismo html-->
+         <iframe src="https://www.clarin.com/" width="900" height="500"></iframe>
+         <!--Iframe tambien sirve para reproducir videos, tocando compartir en youtube y copiando el codigo-->
+         <h3>Videos, Maps, Spotify</h3>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/k_aYhQbg2SY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+    <section>
+        <h3>Listas</h3>
+            <h4>Ordenadas</h4>
+            <!-- <ol> -->
+                <ol>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                    <li>Item 4</li>
+                    <li>Item 5</li>
+                </ol>
+            <h4>De viñetas</h4>
+                <!-- <ul> -->
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                    <li>Item 4</li>
+                    <li>Item 5</li>
+                </ul>    
+                
+    </section>
+    <hr>
+    <section>
+        <h3>Enlaces</h3>
+            <h4>Relativos</h4>
+                <p>Me lleva a una pagina dentro de mi mismo proyecto</p>
+                <a href="../IMG/paletas.webp" target="_blank"> Esto se lee</a> <!--_blank para abrir en pestaña nueva-->
+            <h4>Absoluto</h4>
+                <p>Me lleva a otra pagina</p>
+                <a href="http://www.netflix.com" target="_blank"> Ir a netflix</a>
+            <h4>Internos</h4>
+                <p>Dentro de la misma pagina</p>
+                <a href="#arriba"> Ir arriba</a>
+                <hr>
+    </section>
+    <section>
+        <h3>Formularios</h3>
+            <form action="">
+                <label for="nombre">Nombre:</label>
+                <input type="text"  placeholder="Nombre" name="nombre"> <br>
+                <label for="numero"> Numero: </label>
+                <input type="number" placeholder="Numero" name="numero"><br>
+                <label for="correo">Correo:</label>
+                <input type="email" placeholder="Correo" name="correo"><br>
+                <label for="password"> Password:</label>
+                <input type="password" placeholder="Password" name="password"><br>
+                <label for="comentarios">Comentarios: </label>
+                <textarea name="comentarios"  cols="30" rows="10"></textarea><br>
+                <hr>
+                <!--Botones de radio-->
+                <div>hombre</div>
+                <input type="radio" name="genero" value="hombre">
+                <div>mujer</div>
+                <input type="radio" name="genero" value="mujer"><br><br>
+                <!--Casilla de chequeo-->
+                <div>Acepta terminos y condiciones</div>
+                <input type="checkbox" name="acepta" value="1">
+                <br><br>          
+                <!-- Menu desplegable-->
+                <div>talles</div>
+                <select name="talles" >
+                    <option value="L">L</option>
+                    <option value="M">M</option>
+                    <option value="S">S</option>
+                </select> <br><br>
+
+                <input type="submit" value="Enviar formulario">
+
+
+
+            </form>
+    </section>
+    <hr>
+</body>
+</html>
