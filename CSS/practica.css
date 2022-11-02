@@ -1,0 +1,71 @@
+.border{
+    border:black solid;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+}
+
+.gridArea{
+    display: grid;
+    /*Nombrar areas*/
+    grid-template-areas:
+    /*Estructura*/
+    "menu cabeza cabeza"
+    "menu productos lateral"
+    "menu servicios lateral"
+    "menu pie pie"
+     ;
+     grid-template-columns: 15% auto 15%;
+     grid-template-rows:1fr 2fr 2fr 1fr ;
+     grid-column-gap: 10px ;
+     grid-row-gap: 10px ;
+}
+
+/*Nombrando areas*/
+header{
+    grid-area: cabeza;
+}
+
+footer{
+    grid-area: pie;
+}
+
+#productos{
+    grid-area: productos;
+}
+
+#servicios{
+    grid-area: servicios;
+}
+nav{
+    grid-area: menu;
+}
+aside{
+    grid-area: lateral;
+}
+
+/*Flex*/
+
+.flex {
+    display: flex;
+}
+
+.caja{
+    border: solid;
+    margin: 1%;
+    padding: 1%;
+    text-align: center;
+    background-color: aqua;
+
+}
+
+.caja img {
+    margin: 10%;
+    border: solid;
+    border-radius: 10%;
+}
